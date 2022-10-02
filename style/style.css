@@ -161,4 +161,63 @@ body {
   background-repeat: no-repeat;
 }
 
+.history-section {
+  background-image: url("/img/VintageCyclists.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.history-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 0;
+}
+.history-section .history-container {
+  color: #fff;
+  position: relative;
+  width: 1400px;
+  display: flex;
+}
+.history-section .history-container .history-left {
+  flex: 1;
+}
+.history-section .history-container .history-left .history-title {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+.history-section .history-container .history-left p {
+  margin: 20px 0 30px 0;
+}
+.history-section .history-container .history-left button {
+  position: relative;
+  background-color: var(--color-secondary);
+  font-size: 1.2rem;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 7px;
+  border: none;
+}
+.history-section .history-container .history-left button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.history-section .history-container .history-right {
+  flex: 1;
+}
+.history-section .history-container .history-right img {
+  border: solid 20px whitesmoke;
+}
+
 /*# sourceMappingURL=style.css.map */
